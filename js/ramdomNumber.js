@@ -29,4 +29,3 @@ function randomNumber() {
     return parseInt(Math.random() * maxValue + 1);
 }
 
-console.log(secretNumber);
