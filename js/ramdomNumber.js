@@ -20,10 +20,13 @@ function startGame() {
 }
 
 const playButton = document.getElementById('play-button');
-playButton.addEventListener('click', startGame);
+playButton.addEventListener('click', () => {
+    startRecognition();
+    startGame();
+});
 
 function randomNumber() {
     return parseInt(Math.random() * maxValue + 1);
 }
 
-
+console.log(secretNumber);
