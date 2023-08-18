@@ -203,13 +203,27 @@ body {
 }
 
 .fa-down-long {
-    transform: rotate(0deg); /* A seta aponta para baixo */
+    transform: rotate(0deg); 
 }
-
-
 
 @media (max-width: 1700px) {
     .bubbles span {
         height: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bubbles span {
+        width: 5vw; 
+        height: 5vw;
+    }
+
+    .text-content {
+        font-size: 1.5vh;
+        white-space: normal;
+    }
+    
+    .bubbles span {
+        height: 10px;
     }
 }
